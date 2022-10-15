@@ -1,0 +1,174 @@
+/* Web Fonts ----------------------- */
+
+
+/* Base Styles --------------------- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.25em; /* 20px on most screens */
+}
+@font-face {
+  font-family: "justfont";
+  src: url("../fonts/abolition-regular-webfont.woff") format("woff");
+}
+img {
+  width: 100%; /* responsive images */
+}
+body{
+  margin: 0px;
+}
+main{
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+header{
+  background: url("../img/mountains.jpg"), #d16b3c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  background-blend-mode: multiply;
+  text-align: center;
+  padding-top: 15%;
+  color: white;
+}
+h1{
+  color: white;
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-family: "justfont";
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 7px black;
+
+}
+h1::after{
+  content: "\2193";
+  display: block;
+  font-size: 120px;
+}
+.title{
+  font-family: "Work sans";
+  letter-spacing: 1px;
+}
+p{
+  font-family: "Work sans";
+}
+
+.intro{
+  
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 10%;
+}
+section{
+  width: 80%;
+  margin-bottom: 200px;
+  border-bottom: dashed 1px black;
+  padding-top: 20px;
+  margin: auto;
+  padding-bottom: 5%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.callout{
+  background: linear-gradient(90deg, rgb(237, 233, 230), rgb(230, 131, 44), rgb(233, 134, 21));
+  
+  border-radius: 15px 15px 15px 15px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 30%;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.442);
+  
+}
+.callout:hover{
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+
+#wildlife{
+  background-image: url(../img/bear.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: solid 15px #d76c1a;
+  border-radius: 10px;
+  padding-top: 15%;
+  height: 80vh;
+  background-size: cover;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: inset 3px 3px 5px #000000, inset -3px -3px 5px #000000;
+}
+#wildlife p{
+  padding-left: 10%;
+  padding-right: 15%;
+  font-family: "Work sans";
+}
+#wildlife h2{
+  padding-left: 10%;
+  font-family: "justfont";
+}
+#wildlife p a{
+  color: #d76c1a;
+  text-decoration: none;
+}
+.column{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  font-family: 'Oswald', sans-serif;
+}
+.column:first-child{
+  margin-right: 9%;
+}
+.column ul li a{
+  text-decoration: none;
+  color: #d76c1a;
+}
+.column img{
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+  
+.main-footer{
+  text-align: center;
+}
+.main-footer a{
+  color: #d76c1a;
+}
+.callout:hover{
+  background: white;
+  color: #d16b3c;
+
+}
+.column:hover:before{
+  content: "Download";
+  background: linear-gradient(90deg, rgb(237, 233, 230), rgb(230, 131, 44), rgb(233, 134, 21));
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: absolute;
+  width: 100px;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.442);
+  margin-left: 10px;
+  text-align: center;
+}
+
+
+/* Main Styles --------------------- */
+
+
+/* Media Queries ------------------- */
+
